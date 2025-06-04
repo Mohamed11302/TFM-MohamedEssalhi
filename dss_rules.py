@@ -58,7 +58,6 @@ with ruleset('infeccion_respiratoria'):
     @when_all((m.predicado == 'diagnosticado_con'))
     def salida_final(c):
         salida = f'\n✅ Diagnóstico final: El paciente {c.m.sujeto} ha sido diagnosticado con {c.m.objeto}'
-        print(salida)
 
         recomendaciones = {
             'resfriado_comun': 'Se recomienda reposo, hidratación abundante y medicamentos para aliviar los síntomas.',
@@ -69,7 +68,6 @@ with ruleset('infeccion_respiratoria'):
             'neumonia_severa': 'Se recomienda atención hospitalaria urgente.'
         }
         recomendacion = recomendaciones.get(c.m.objeto, 'Se recomienda consultar a un médico para mayor orientación.')
-        print(f'🩺 Recomendación: {recomendacion}')
         resultados.append(c.m.objeto)
         resultados.append(recomendacion)
 
@@ -103,13 +101,11 @@ with ruleset('nevus_melanocitico'):
     @when_all((m.predicado == 'diagnosticado_con'))
     def salida(c):
         salida = f'\n✅ Diagnóstico final: El paciente {c.m.sujeto} ha sido diagnosticado con {c.m.objeto}'
-        print(salida)
         recomendaciones = {
             'nevus_melanocitico_benigno': 'Se sugiere control dermatológico anual para seguimiento preventivo.',
             'lesion_sospechosa_melanoma': 'Es imprescindible consultar con un dermatólogo lo antes posible para evaluación especializada y posible biopsia.'
         }
         recomendacion = recomendaciones.get(c.m.objeto, 'Se recomienda una valoración médica especializada.')
-        print(f'🩺 Recomendación: {recomendacion}')
         resultados.append(c.m.objeto)
         resultados.append(recomendacion)
 
@@ -163,14 +159,12 @@ with ruleset('quemadura_solar'):
     @when_all((m.predicado == 'diagnosticado_con') & (m.objeto.matches('quemadura_solar.*')))
     def salida(c):
         salida = f'\n✅ Diagnóstico final: El paciente {c.m.sujeto} ha sido diagnosticado con {c.m.objeto}'
-        print(salida)
         recomendaciones = {
             'quemadura_solar_leve': 'Aplicar crema hidratante, evitar nueva exposición solar y mantenerse bien hidratado.',
             'quemadura_solar_moderada': 'Utilizar pomada con aloe vera o corticoides suaves. Evitar el sol hasta la recuperación completa.',
             'quemadura_solar_severa': 'Acudir a un centro de salud. No romper las ampollas y cubrir las áreas afectadas con apósitos estériles.'
         }
         recomendacion = recomendaciones.get(c.m.objeto, 'Se recomienda atención médica si los síntomas empeoran.')
-        print(f'🩺 Recomendación: {recomendacion}')
         resultados.append(c.m.objeto)
         resultados.append(recomendacion)
 

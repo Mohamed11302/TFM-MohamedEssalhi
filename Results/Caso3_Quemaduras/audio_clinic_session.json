@@ -1,10 +1,10 @@
 {
-  "session_id": "37aa287a-1b16-4d48-9c92-8e75cdabf749",
-  "timestamp": "2025-06-04T11:38:20.157114",
+  "session_id": "e0752f01-45be-4c0a-bbf6-4565059e3c4e",
+  "timestamp": "2025-06-04T12:35:22.390508",
   "speakers": [
-    "especialista",
-    "medico",
-    "paciente"
+    "doctor",
+    "patient",
+    "specialist"
   ],
   "clinical_segments": {
     "courtesy": {
@@ -29,7 +29,7 @@
     }
   },
   "medical_concepts": {
-    "especialista": {
+    "specialist": {
       "PROC": [
         "protección solar",
         "cuide"
@@ -61,7 +61,7 @@
         "regenere"
       ]
     },
-    "medico": {
+    "doctor": {
       "DISO": [
         "duele?",
         "escuece?",
@@ -137,11 +137,11 @@
       "localizacion": "piel"
     }
   ],
-  "diagnosis": {
+  "dss_diagnosis": {
     "diagnosis": "quemadura_solar_leve",
     "recommendation": "Aplicar crema hidratante, evitar nueva exposición solar y mantenerse bien hidratado."
   },
-  "transcription": {
+  "conversation": {
     "segments": [
       {
         "start": 0.3,

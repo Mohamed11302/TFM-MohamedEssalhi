@@ -1,10 +1,10 @@
 {
-  "session_id": "475e0f91-b4ca-4b15-83c3-c7f039054f57",
-  "timestamp": "2025-06-04T11:38:20.155929",
+  "session_id": "7b045f92-5dc2-4cc0-bbe2-3a932f06c3c0",
+  "timestamp": "2025-06-04T12:35:22.388951",
   "speakers": [
-    "especialista",
-    "medico",
-    "paciente"
+    "doctor",
+    "patient",
+    "specialist"
   ],
   "clinical_segments": {
     "courtesy": {
@@ -29,7 +29,7 @@
     }
   },
   "medical_concepts": {
-    "especialista": {
+    "specialist": {
       "PROC": [
         "observación",
         "seguimiento",
@@ -58,7 +58,7 @@
         "nevus melanocíticos"
       ]
     },
-    "medico": {
+    "doctor": {
       "PHYS": [
         "sol"
       ],
@@ -129,11 +129,11 @@
       "objeto": "crecimiento_repentino"
     }
   ],
-  "diagnosis": {
+  "dss_diagnosis": {
     "diagnosis": "lesion_sospechosa_melanoma",
     "recommendation": "Es imprescindible consultar con un dermatólogo lo antes posible para evaluación especializada y posible biopsia."
   },
-  "transcription": {
+  "conversation": {
     "segments": [
       {
         "start": 1.35,

@@ -1,10 +1,10 @@
 {
-  "session_id": "173fa745-aaeb-4404-9d69-6686c515b01b",
-  "timestamp": "2025-06-04T11:38:20.154484",
+  "session_id": "1d071fb8-c94f-419c-83ce-a72e4b56584b",
+  "timestamp": "2025-06-04T12:35:22.387451",
   "speakers": [
-    "especialista",
-    "medico",
-    "paciente"
+    "doctor",
+    "patient",
+    "specialist"
   ],
   "clinical_segments": {
     "courtesy": {
@@ -29,7 +29,7 @@
     }
   },
   "medical_concepts": {
-    "especialista": {
+    "specialist": {
       "DISO": [
         "síntomas",
         "bronquitis",
@@ -66,7 +66,7 @@
         "recuperación"
       ]
     },
-    "medico": {
+    "doctor": {
       "DISO": [
         "síntoma",
         "síntomas?",
@@ -168,11 +168,11 @@
       "exposicion": "trabajo en el campo"
     }
   ],
-  "diagnosis": {
+  "dss_diagnosis": {
     "diagnosis": "resfriado_comun",
     "recommendation": "Se recomienda reposo, hidratación abundante y medicamentos para aliviar los síntomas."
   },
-  "transcription": {
+  "conversation": {
     "segments": [
       {
         "start": 0.2,

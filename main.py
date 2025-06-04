@@ -79,7 +79,6 @@ def main(case, llm_model, audio_processor, medner):
     if not os.path.exists(case_output_folder):
         os.makedirs(case_output_folder)
     case_output_path = case_output_folder + "/audio"
-    """
     print("Extracting audio from video")
     df = audio_processor.extract_audio_segmentated_pyannote(audio_file=case_input_path + ".wav")
     df.to_csv(case_output_path + ".csv", index=False)
@@ -88,29 +87,24 @@ def main(case, llm_model, audio_processor, medner):
     print("Obtaining roles")
     df_cleaned = pd.read_csv(case_output_path + "_cleaned_text.csv", encoding='utf-8')
     df_cleaned_with_speakers = identify_speakers(df_cleaned, case_output_path, llm_model)
-    df_cleaned_with_speakers = pd.read_csv(case_output_path + "_cleaned_text_and_roles.csv", encoding='utf-8')
     print("Performing clinic segmentation")
     clinic_segmentation(df_cleaned_with_speakers, case_output_path, llm_model)
     print("Performing medical NER")
     medical_ner(df_cleaned_with_speakers, case_output_path, medner)
     print("Extracting symptoms")
     symptoms = extract_sympthoms(df_cleaned_with_speakers, case_output_path, llm_model)
-    """
-    with open(case_output_path + "_symptoms.json", "r", encoding="utf-8") as f:
-        symptoms = json.load(f)
     print("Diagnosing with DSS")
     diagnosis = diagnosis_with_dss(symptoms, case_output_path)
     
     build_final_json(case_output_path)
     
 if __name__ == "__main__":
-    #medner = MedNER()
+    medner = MedNER()
     llm_model = LLMmodel()
-    #audio_processor = AudioProcessor(size=WHISPER_MODEL_SIZE)
-    medner = None
-    audio_processor = None
+    audio_processor = AudioProcessor(size=WHISPER_MODEL_SIZE)
+    #medner = None
+    #audio_processor = None
     cases = ["Caso1_InfeccionRespiratoria", "Caso2_Lunares", "Caso3_Quemaduras"]
-    #cases = ["Caso1_InfeccionRespiratoria"]
     for case in cases:
         print("Processing case:", case)
         main(case, llm_model, audio_processor, medner)
