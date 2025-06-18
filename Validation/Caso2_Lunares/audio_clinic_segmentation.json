@@ -1,0 +1,33 @@
+{
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢"
+            },
+            {
+                "inicio": "00:10",
+                "fase": "🟠"
+            },
+            {
+                "inicio": "00:22",
+                "fase": "🔵"
+            },
+            {
+                "inicio": "03:30",
+                "fase": "🔴"
+            },
+            {
+                "inicio": "04:05",
+                "fase": "⚪"
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+# docker compose exec ollama ollama pull deepseek-r1:8b
+services:
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ./ollama-models:/root/.ollama
+    ports:
+      - 11434:11434

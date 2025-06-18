@@ -1,0 +1,76 @@
+{
+    "resumen_fases": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:00 → 00:00:06",
+            "resumen": "Intercambio de saludos; el médico invita al paciente a sentarse y pregunta cómo se siente."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:06 → 00:00:23",
+            "resumen": "Paciente describe dolor de garganta, sequedad, dificultad para tragar y respirar."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:23 → 00:01:50",
+            "resumen": "Médico deriva a especialista; se indaga sobre duración de síntomas, exposición laboral (frío/polvo) y medicación actual. Paciente revela que trabaja en el campo."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "00:01:51 → 00:02:28",
+            "resumen": "Especialista diagnostica bronquitis relacionada con exposición ambiental; médico confirma infección respiratoria leve."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "🔴",
+            "tiempo": "00:02:28 → 00:04:57",
+            "resumen": "Recomendación de antitusígenos, analgésicos, descongestivos, reposo en posición elevada e hidratación. Especialista descarta antibióticos y enfatiza vigilancia."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "00:04:57 → 00:05:02",
+            "resumen": "Se emite receta, se ofrecen garantías de seguimiento y se intercambian despedidas corteses."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Saludos iniciales"
+            },
+            {
+                "inicio": "00:06",
+                "fase": "🟠",
+                "comentario": "Descripción síntomas"
+            },
+            {
+                "inicio": "00:23",
+                "fase": "🔵",
+                "comentario": "Preguntas y diagnóstico"
+            },
+            {
+                "inicio": "02:28",
+                "fase": "🔴",
+                "comentario": "Recomendaciones tratamiento"
+            },
+            {
+                "inicio": "04:57",
+                "fase": "⚪",
+                "comentario": "Cierre y receta"
+            }
+        ]
+    }
+}

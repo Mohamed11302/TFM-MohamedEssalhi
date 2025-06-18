@@ -1,0 +1,72 @@
+{
+  "resumen_fases": [
+    {
+      "fase": "Conversación informal / cortesía",
+      "icono": "🟢",
+      "tiempo": "00:00:00 → 00:00:07",
+      "resumen": "Intercambio inicial de saludos y cortesía entre el médico y el paciente antes de iniciar la consulta propiamente dicha."
+    },
+    {
+      "fase": "Exposición de síntomas",
+      "icono": "🟠",
+      "tiempo": "00:00:09 → 00:00:22",
+      "resumen": "El paciente explica que recientemente realizó una ruta senderista, tras la cual ha notado quemaduras en la piel y desea saber si son peligrosas."
+    },
+    {
+      "fase": "Exploración / preguntas diagnósticas",
+      "icono": "🔵",
+      "tiempo": "00:00:22 → 00:01:24",
+      "resumen": "El médico y el especialista realizan preguntas sobre el dolor, el uso de protección solar y los síntomas posteriores a la exposición al sol. También examinan visualmente la piel."
+    },
+    {
+      "fase": "Diagnóstico",
+      "icono": "🔵",
+      "tiempo": "00:01:24 → 00:01:48",
+      "resumen": "El especialista indica que se trata de una quemadura solar de primer grado, que aunque superficial, puede resultar molesta."
+    },
+    {
+      "fase": "Tratamiento",
+      "icono": "🔴",
+      "tiempo": "00:01:48 → 00:03:00",
+      "resumen": "Se recomienda el uso de cremas con aloe vera o pantenol, evitar productos irritantes, mantener la piel hidratada y no exponerse al sol. Se dan consejos para los próximos días y se menciona el tiempo estimado de curación."
+    },
+    {
+      "fase": "Despedida / cierre",
+      "icono": "⚪",
+      "tiempo": "00:03:00 → 00:03:20",
+      "resumen": "Recomendaciones finales sobre evitar el sol directo, volver a consulta si empeora y un cierre cordial de la conversación."
+    }
+  ],
+  "timeline_visual": {
+    "leyenda": {
+      "🟢": "Cortesía",
+      "🟠": "Síntomas",
+      "🔵": "Exploración y diagnóstico",
+      "🔴": "Tratamiento",
+      "⚪": "Cierre"
+    },
+    "estructura": [
+      { 
+        "inicio": "00:00", 
+        "fase": "🟢", 
+        "comentario": "Cortesía" 
+      },
+      { "inicio": "00:09", 
+        "fase": "🟠", 
+        "comentario": "Síntomas" 
+      },
+      { "inicio": "00:22", 
+        "fase": "🔵", 
+        "comentario": "Exploración y diagnóstico" 
+      },
+      { "inicio": "01:48", 
+        "fase": "🔴", 
+        "comentario": "Tratamiento" 
+      },
+      { "inicio": "03:00", 
+        "fase": "⚪", 
+        "comentario": "Cierre" 
+      }
+    ]
+  }
+}
